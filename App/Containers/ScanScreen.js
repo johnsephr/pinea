@@ -1,8 +1,25 @@
 import React, { Component } from 'react'
-import { ScrollView, Text, KeyboardAvoidingView } from 'react-native'
+import { Image, Linking, Alert, StatusBar } from "react-native";
 import { connect } from 'react-redux'
-// Add Actions - replace 'Your' with whatever your reducer is called :)
-// import YourActions from '../Redux/YourRedux'
+import {
+  Text,
+  View,
+  Container,
+  Content,
+  Title,
+  Button,
+  Left,
+  Right,
+  Body,
+  H1,
+} from "native-base";
+import Icon from 'react-native-vector-icons/FontAwesome';
+import NfcManager, {NdefParser} from 'react-native-nfc-manager';
+import Video from 'react-native-video';
+import * as Animatable from 'react-native-animatable';
+
+import BgVideo from '../Images/bg.mov';
+import WhiteLogoImage from '../Images/pinea-logo-white.png';
 
 // Styles
 import styles from './Styles/ScanScreenStyle'
@@ -10,11 +27,11 @@ import styles from './Styles/ScanScreenStyle'
 class ScanScreen extends Component {
   render () {
     return (
-      <ScrollView style={styles.container}>
+      <Container style={styles.container}>
         {/* <KeyboardAvoidingView behavior='position'> */}
           <Text>ScanScreen</Text>
         {/* </KeyboardAvoidingView> */}
-      </ScrollView>
+      </Container>
     )
   }
 }
