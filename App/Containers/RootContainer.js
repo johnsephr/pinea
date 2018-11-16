@@ -4,6 +4,9 @@ import ReduxNavigation from '../Navigation/ReduxNavigation'
 import { connect } from 'react-redux'
 import StartupActions from '../Redux/StartupRedux'
 
+// Import Scanscreen (no navigation)
+import ScanScreen from "../Containers/ScanScreen";
+
 // Styles
 import styles from './Styles/RootContainerStyles'
 
@@ -15,8 +18,9 @@ class RootContainer extends Component {
   render () {
     return (
       <View style={styles.applicationView}>
-        <StatusBar barStyle='light-content' />
-        <ReduxNavigation />
+        {/* <StatusBar barStyle='light-content' /> */}
+        {/* <ReduxNavigation /> */}
+        <ScanScreen />
       </View>
     )
   }
