@@ -1,4 +1,5 @@
 import { StackNavigator } from 'react-navigation'
+import HelpScreen from '../Containers/HelpScreen'
 import ProductListScreen from '../Containers/ProductListScreen'
 import ScanScreen from '../Containers/ScanScreen'
 import LaunchScreen from '../Containers/LaunchScreen'
@@ -10,6 +11,7 @@ const PrimaryNav = StackNavigator(
   {
     Products: { screen: ProductListScreen },
     Scan: { screen: ScanScreen },
+    Help: { screen: HelpScreen },
     // LaunchScreen: { screen: LaunchScreen }
   },
   {
