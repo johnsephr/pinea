@@ -48,7 +48,7 @@ class ScanScreen extends Component {
           'Error',
           'Please make sure you are scanning a valid tag and try again.',
           [
-            { text: 'View Products', onPress: () => { this.props.navigation.navigate('Products') } },
+            // { text: 'View Products', onPress: () => { this.props.navigation.navigate('Products') } },
             { text: 'OK', onPress: () => console.log('OK Pressed') }
           ],
           {
@@ -73,7 +73,7 @@ class ScanScreen extends Component {
           'Error',
           'Device does not support NFC.',
           [
-            { text: 'View Products', onPress: () => { this.props.navigation.navigate('Products') } },
+            // { text: 'View Products', onPress: () => { this.props.navigation.navigate('Products') } },
             { text: 'OK', onPress: () => console.log('OK Pressed') }
           ],
           {
