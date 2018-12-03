@@ -60,20 +60,7 @@ class ScanScreen extends Component {
 
     NfcManager.start({
       onSessionClosedIOS: () => {
-        // console.log('ios session closed');
-
-        Alert.alert(
-          'Error',
-          'onSessionClosedIOS',
-          [
-            // { text: 'View Products', onPress: () => { this.props.navigation.navigate('Products') } },
-            { text: 'OK', onPress: () => console.log('OK Pressed') }
-          ],
-          {
-            cancelable: false
-          }
-        )
-
+        console.log('ios session closed');
         NfcManager.unregisterTagEvent()
       }
     })
